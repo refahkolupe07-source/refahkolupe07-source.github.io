@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refah Kolupe — Web Developer &amp; Jasa Pembuatan Website</title>
+  <meta name="description" content="Refah Kolupe, mahasiswa Teknik Informatika UKSW. Jasa pembuatan website untuk UMKM, portofolio, dan kebutuhan custom. Desain responsif, clean code, dan harga bersahabat.">
+  <meta name="author" content="Refah Kolupe">
+  <meta name="theme-color" content="#07070d">
+  <meta property="og:title" content="Refah Kolupe — Web Developer &amp; Jasa Pembuatan Website">
+  <meta property="og:description" content="Bantu usaha kecil dan personal brand tampil lebih rapi lewat website yang cepat, responsif, dan enak dipakai.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:image" content="https://placehold.co/1200x630/1a1a2e/ffffff?text=Refah+Kolupe">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+      <path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+      <path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.34M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.45 6.6 2.01 12.05 2.01c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.23-6.16-3.48-8.41Z"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24">
+      <path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-terminal" viewBox="0 0 24 24">
+      <path d="m4 6 6 6-6 6M12 18h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-store" viewBox="0 0 24 24">
+      <path d="M4 10v10h16V10M3 10l2-6h14l2 6M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-layout" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M3 9h18M9 21V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-custom" viewBox="0 0 24 24">
+      <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    </symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24">
+      <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-clean" viewBox="0 0 24 24">
+      <path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-responsive" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="14" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M8 20h4M10 16v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <rect x="18" y="8" width="4" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    </symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24">
+      <path d="M4 6h14a2 2 0 0 1 2 2v10H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16 12h4v4h-4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-graduation" viewBox="0 0 24 24">
+      <path d="m2 9 10-5 10 5-10 5L2 9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24">
+      <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#beranda" aria-label="Refah Kolupe — Beranda">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>Refah<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Navigasi utama">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a class="nav-link is-active" href="#beranda" aria-current="page">Beranda</a>
+          <a class="nav-link" href="#tentang">Tentang</a>
+          <a class="nav-link" href="#kemampuan">Kemampuan</a>
+          <a class="nav-link" href="#jasa">Jasa</a>
+          <a class="nav-link" href="#harga">Harga</a>
+          <a class="nav-link" href="#kontak">Kontak</a>
+          <a class="btn btn-primary btn-sm nav-cta" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya tertarik membuat website. Boleh diskusi?" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Pesan Website
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Terbuka untuk proyek freelance
+          </span>
+
+          <h1>Halo, saya <span class="gradient-text">Refah Kolupe.</span></h1>
+
+          <p class="hero-lead">Mahasiswa Teknik Informatika UKSW yang punya passion di web development. Saya bantu usaha kecil dan personal brand tampil lebih rapi lewat website yang cepat, responsif, dan enak dipakai.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya tertarik membuat website. Boleh diskusi?" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+              Pesan Website
+            </a>
+            <a class="btn btn-ghost" href="#tentang">
+              Lihat Profil
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-down"></use></svg>
+            </a>
+          </div>
+
+          <div class="hero-meta" role="group" aria-label="Info singkat">
+            <span>Salatiga, Indonesia</span>
+            <span>Fokus: Web Development</span>
+            <span>Mahasiswa aktif UKSW</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="portrait-frame">
+            <img src="Refahpro1.png" alt="Foto profil Refah Kolupe" width="400" height="400" fetchpriority="high">
+
+            <div class="floating-card floating-card--top">
+              <span class="floating-icon" aria-hidden="true">
+                <svg class="icon"><use href="#icon-code"></use></svg>
+              </span>
+              <span class="floating-text">
+                <strong>Web Development</strong>
+                <small>HTML · CSS · JS</small>
+              </span>
+            </div>
+
+            <div class="floating-card floating-card--bottom">
+              <span class="floating-icon" aria-hidden="true">
+                <svg class="icon"><use href="#icon-responsive"></use></svg>
+              </span>
+              <span class="floating-text">
+                <strong>Clean &amp; responsif</strong>
+                <small>Nyaman di semua layar</small>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tentang">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Tentang saya</span>
+          <h2>Kenalan dulu, ya.</h2>
+          <p>Sedikit cerita soal kuliah, cara saya bekerja, dan hal-hal yang bikin saya betah di dunia web.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>Saya Refah, mahasiswa aktif S1 Teknik Informatika di Universitas Kristen Satya Wacana (UKSW), Salatiga. Di kampus saya belajar pemrograman, sistem, dan cara berpikir terstruktur. Di luar kelas, saya lebih sering menghabiskan waktu mengutak-atik layout, animasi, dan hal-hal kecil yang bikin website terasa nyaman.</p>
+            <p>Bagi saya, website yang baik bukan cuma yang terlihat keren. Ia harus jelas saat dibaca, cepat saat dibuka, dan tetap enak dipakai di HP. Itu prinsip yang saya bawa setiap kali mengerjakan proyek.</p>
+            <p>Saat ini saya terbuka untuk membantu UMKM, mahasiswa, atau personal brand yang butuh website. Kalau kamu baru punya ide kasar, kita bisa mulai dari obrolan santai.</p>
+
+            <div class="education-card">
+              <div class="edu-icon" aria-hidden="true">
+                <svg class="icon"><use href="#icon-graduation"></use></svg>
+              </div>
+              <div class="edu-content">
+                <span class="edu-label">Pendidikan</span>
+                <h3>S1 Teknik Informatika</h3>
+                <p>Universitas Kristen Satya Wacana (UKSW)</p>
+                <span class="edu-status">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  Mahasiswa aktif · Salatiga
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-gallery reveal delay-1" role="group" aria-label="Galeri kampus UKSW">
+            <figure>
+              <img src="UKSW3.jpg" alt="Gerbang UKSW" width="600" height="400" loading="lazy" decoding="async">
+              <figcaption>Gerbang UKSW</figcaption>
+            </figure>
+            <figure>
+              <img src="UKSW1.jpg" alt="Lingkungan kampus UKSW" width="600" height="400" loading="lazy" decoding="async">
+              <figcaption>Lingkungan Kampus</figcaption>
+            </figure>
+            <figure>
+              <img src="FTI1.jpg" alt="Fakultas Teknik Informatika UKSW" width="600" height="400" loading="lazy" decoding="async">
+              <figcaption>Fakultas TI</figcaption>
+            </figure>
+            <figure>
+              <img src="UKSW2.jpg" alt="Lab komputer UKSW" width="600" height="400" loading="lazy" decoding="async">
+              <figcaption>UKSW</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kemampuan">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Kemampuan</span>
+          <h2>Yang saya pakai sehari-hari.</h2>
+          <p>Bukan daftar panjang tanpa arah. Ini tools dan fondasi yang benar-benar saya gunakan untuk membangun web.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg class="icon"><use href="#icon-code"></use></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Dari menyusun layout sampai menghubungkan frontend dengan backend. Saya nyaman bekerja dengan HTML, CSS, dan JavaScript, lalu memakai React, Node.js, atau Three.js saat proyeknya membutuhkan.</p>
+            <ul class="badge-list" aria-label="Teknologi web development">
+              <li class="badge">HTML/CSS/JS</li>
+              <li class="badge">React</li>
+              <li class="badge">Node.js</li>
+              <li class="badge">Three.js</li>
+            </ul>
+          </article>
+
+          <article class="skill-card skill-card--compact reveal delay-1">
+            <div class="skill-icon" aria-hidden="true">
+              <svg class="icon"><use href="#icon-terminal"></use></svg>
+            </div>
+            <h3>Bahasa &amp; Dasar Teknik</h3>
+            <p>Belajar C membuat saya lebih teliti soal logika, memori, dan struktur program. Fondasi ini membantu saya menulis kode web yang lebih rapi dan mudah dirawat.</p>
+            <ul class="badge-list" aria-label="Bahasa pemrograman">
+              <li class="badge">C</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="jasa">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <span class="section-kicker">Jasa</span>
+            <h2>Website yang dibuat sesuai kebutuhan.</h2>
+          </div>
+          <p>Mulai dari satu halaman sederhana sampai proyek custom. Semua dikerjakan dengan struktur rapi dan komunikasi yang jelas.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="card-index">01</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg class="icon"><use href="#icon-store"></use></svg>
+              </div>
+            </div>
+            <h3>Landing Page UMKM</h3>
+            <p>Satu halaman yang fokus: kenalkan produk atau jasa, bangun kepercayaan, lalu arahkan calon pelanggan ke WhatsApp. Cocok untuk usaha yang baru mulai online.</p>
+            <ul class="feature-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Struktur konten yang jelas</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Tombol WhatsApp langsung</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Cepat dan ringan</li>
+            </ul>
+            <a class="text-link" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya tertarik dengan jasa Landing Page UMKM. Boleh minta info?" target="_blank" rel="noopener noreferrer">
+              Tanya layanan ini
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal delay-1">
+            <div class="card-top">
+              <span class="card-index">02</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg class="icon"><use href="#icon-layout"></use></svg>
+              </div>
+            </div>
+            <h3>Web Portofolio</h3>
+            <p>Tempat untuk menunjukkan karya, pengalaman, dan keahlian tanpa terlihat seperti CV biasa. Desainnya dibuat personal, rapi, dan mudah diperbarui.</p>
+            <ul class="feature-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Galeri karya yang rapi</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Halaman tentang &amp; kontak</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Desain responsif</li>
+            </ul>
+            <a class="text-link" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya tertarik dengan jasa Web Portofolio. Boleh minta info?" target="_blank" rel="noopener noreferrer">
+              Tanya layanan ini
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal delay-2">
+            <div class="card-top">
+              <span class="card-index">03</span>
+              <div class="service-icon" aria-hidden="true">
+                <svg class="icon"><use href="#icon-custom"></use></svg>
+              </div>
+            </div>
+            <h3>Custom Web</h3>
+            <p>Butuh fitur yang belum ada di template? Kita rancang bersama—mulai dari dashboard, form, integrasi API, sampai halaman multi-bahasa.</p>
+            <ul class="feature-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Fitur sesuai kebutuhan</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Integrasi API atau database</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Pendampingan setelah rilis</li>
+            </ul>
+            <a class="text-link" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya punya kebutuhan website custom. Boleh diskusi?" target="_blank" rel="noopener noreferrer">
+              Tanya layanan ini
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </article>
+        </div>
+
+        <div class="advantages reveal" role="group" aria-label="Keunggulan layanan">
+          <div class="advantage">
+            <span class="advantage-icon" aria-hidden="true"><svg class="icon"><use href="#icon-bolt"></use></svg></span>
+            <div>
+              <h3>Pengerjaan cepat</h3>
+              <p>Timeline jelas, progres bisa ditanyakan kapan saja.</p>
+            </div>
+          </div>
+          <div class="advantage">
+            <span class="advantage-icon" aria-hidden="true"><svg class="icon"><use href="#icon-clean"></use></svg></span>
+            <div>
+              <h3>Clean code</h3>
+              <p>Struktur file rapi dan mudah dikembangkan.</p>
+            </div>
+          </div>
+          <div class="advantage">
+            <span class="advantage-icon" aria-hidden="true"><svg class="icon"><use href="#icon-responsive"></use></svg></span>
+            <div>
+              <h3>Responsif</h3>
+              <p>Nyaman dibuka dari HP, tablet, sampai desktop.</p>
+            </div>
+          </div>
+          <div class="advantage">
+            <span class="advantage-icon" aria-hidden="true"><svg class="icon"><use href="#icon-wallet"></use></svg></span>
+            <div>
+              <h3>Harga bersahabat</h3>
+              <p>Bisa disesuaikan dengan kebutuhan dan budget.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="harga">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="section-kicker">Paket harga</span>
+          <h2>Pilih titik mulai yang paling pas.</h2>
+          <p>Belum ada harga pasti di sini karena setiap proyek berbeda. Ceritakan kebutuhanmu, nanti saya kirim penawaran yang masuk akal.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <span class="price-label">Basic</span>
+            <h3>Mulai dari yang penting.</h3>
+            <p class="price-desc">Untuk yang butuh kehadiran online sederhana dan langsung bisa dipakai.</p>
+            <div class="price-amount">
+              Hubungi untuk penawaran
+              <span>Konsultasi awal gratis</span>
+            </div>
+            <ul class="price-features">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> 1 halaman landing</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Desain responsif</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Tombol WhatsApp</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Revisi 2x</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Source code</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya tertarik dengan paket Basic. Boleh minta penawaran?" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+              Diskusikan paket
+            </a>
+          </article>
+
+          <article class="price-card price-card--featured reveal delay-1">
+            <span class="price-badge">Paling sering dipilih</span>
+            <span class="price-label">Pro</span>
+            <h3>Tampil lebih serius.</h3>
+            <p class="price-desc">Pilihan pas untuk bisnis atau personal brand yang ingin terlihat lebih matang.</p>
+            <div class="price-amount">
+              Hubungi untuk penawaran
+              <span>Konsultasi awal gratis</span>
+            </div>
+            <ul class="price-features">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Hingga 5 seksi</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Desain custom</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Animasi halus</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> SEO dasar</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Revisi 3x</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Source code</li>
+            </ul>
+            <a class="btn btn-primary" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya tertarik dengan paket Pro. Boleh minta penawaran?" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+              Ambil paket Pro
+            </a>
+          </article>
+
+          <article class="price-card reveal delay-2">
+            <span class="price-label">Custom</span>
+            <h3>Bebas sesuai kebutuhan.</h3>
+            <p class="price-desc">Untuk proyek yang punya alur, fitur, atau integrasi khusus.</p>
+            <div class="price-amount">
+              Hubungi untuk penawaran
+              <span>Konsultasi awal gratis</span>
+            </div>
+            <ul class="price-features">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Multi-halaman</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Fitur custom</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Integrasi API/database</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Timeline fleksibel</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> Pendampingan</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya butuh website custom. Boleh cerita kebutuhan saya?" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+              Ceritakan kebutuhanmu
+            </a>
+          </article>
+        </div>
+
+        <p class="pricing-note reveal">Belum yakin pilih yang mana? <a href="https://wa.me/6285298339432" data-wa="Halo Refah, saya masih bingung pilih paket website. Boleh dibantu?" target="_blank" rel="noopener noreferrer">Tanya saja lewat WhatsApp</a>. Tidak ada paksaan untuk langsung deal.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontak">
+      <div class="container">
+        <div class="contact-card reveal">
+          <span class="section-kicker">Kontak</span>
+          <h2>Punya ide? Ceritakan saja.</h2>
+          <p>Tidak perlu sudah punya brief lengkap. Kadang obrolan singkat soal tujuan dan referensi sudah cukup untuk mulai. Saya balas langsung, kok.</p>
+          <a class="btn btn-primary btn-lg" href="https://wa.me/6285298339432" data-wa="Halo Refah, saya ingin membahas ide website. Kapan waktu yang enak untuk ngobrol?" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Chat via WhatsApp
+          </a>
+          <p class="contact-note">Biasanya dibalas dalam 1x24 jam. Tanpa paksaan untuk langsung deal.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#beranda" aria-label="Refah Kolupe — Beranda">
+            <span class="brand-mark" aria-hidden="true">R</span>
+            <span>Refah<span class="brand-dot">.</span></span>
+          </a>
+          <p>Web developer &amp; mahasiswa Informatika UKSW. Membantu ide kecil tampil rapi di internet.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Navigasi footer">
+          <a href="#tentang">Tentang</a>
+          <a href="#kemampuan">Kemampuan</a>
+          <a href="#jasa">Jasa</a>
+          <a href="#harga">Harga</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Refah Kolupe. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+        <a class="back-to-top" href="#beranda">
+          Kembali ke atas
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
